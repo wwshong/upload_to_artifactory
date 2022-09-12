@@ -30,7 +30,7 @@ pipeline {
              "pattern": "**/target/*.pom",
              "target": "/"
            }, {
-             "pattern": "${WORKSPACE}/(*.txt)",
+             "pattern": "${WORKSPACE}/*.txt",
 			"target": "${BUILD_NUMBER}/{1}",
            }
          ]
