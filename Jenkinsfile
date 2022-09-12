@@ -30,7 +30,7 @@ pipeline {
              "pattern": "**/target/*.pom",
              "target": "/"
            }, {
-             "pattern": "**/*.txt",
+             "pattern": "*.txt",
              "target": "/"
            }
          ]
