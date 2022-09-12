@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage("create artifacts") {
             steps {
-               echo "jenkins publishes artifacts to jfrog" > jenkins-jfog.txt  
-                 
+     
+                 sh 'echo jenkins publishes artifacts to jfrog >> jenkins-jfog.txt '
             }
         }
 
