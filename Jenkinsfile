@@ -31,7 +31,7 @@ pipeline {
              "target": "/"
            }, {
              "pattern": "${WORKSPACE}/*.txt",
-			"target": "/",
+			"target": "/"
            }
          ]
        }"""
