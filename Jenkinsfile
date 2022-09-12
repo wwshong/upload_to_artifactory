@@ -16,6 +16,7 @@ pipeline {
         stage("upload artifacts") {
             steps {
 			 echo "jenkins publishes artifacts to jfrog"
+			  script {
 			 def server = Artifactory.server "jenkins-jfrog-integ"
        def buildInfo = Artifactory.newBuildInfo()
        buildInfo.env.capture = true
@@ -39,6 +40,7 @@ pipeline {
        buildInfo.retention maxBuilds: 10, maxDays: 7, deleteBuildArtifacts: true
        // Publish build info.
        server.publishBuildInfo buildInfo
+	   }
 		    }
 		}
 	}
