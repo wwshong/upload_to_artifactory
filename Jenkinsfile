@@ -13,7 +13,7 @@ pipeline {
             }
         }
 
-        stage("upload") {
+        stage("upload artifacts") {
             steps {
 			 echo "jenkins publishes artifacts to jfrog"
 		    }
