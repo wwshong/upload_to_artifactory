@@ -5,11 +5,6 @@ pipeline {
         disableConcurrentBuilds()
     }
 
-	environment {
-		
-		FOO = "bar"
-		
-	}
     stages {
         stage("create artifacts") {
             steps {
