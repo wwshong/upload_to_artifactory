@@ -31,7 +31,8 @@ pipeline {
              "target": "/"
            }, {
              "pattern": "${WORKSPACE}/*.txt",
-			"target": "example-repo-local"
+			 //jfrog repository.  we can create a new one too
+			"target": "example-repo-local" 
            }
          ]
        }"""
