@@ -31,7 +31,7 @@ pipeline {
              "target": "/"
            }, {
              "pattern": "${WORKSPACE}/*.txt",
-			"target": "{1}"
+			"target": "/upload_to_artifactory"
            }
          ]
        }"""
