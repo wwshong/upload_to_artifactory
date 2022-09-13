@@ -31,7 +31,7 @@ pipeline {
              "target": "/"
            }, {
              "pattern": "${WORKSPACE}/*.txt",
-			"target": "artifactory-build-info/upload_to_artifactory"
+			"target": "example-repo-local"
            }
          ]
        }"""
