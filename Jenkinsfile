@@ -17,6 +17,10 @@ pipeline {
             steps {
 			 echo "jenkins publishes artifacts to jfrog"
 			  script {
+			  
+			  #Jenkins-jfrog-integ is defined in Jenkins above
+				# w/o defining the jfrog con info, we can specify the jfrog url, user, pwd here in the code too
+
 			 def server = Artifactory.server "jenkins-jfrog-integ"
        def buildInfo = Artifactory.newBuildInfo()
        buildInfo.env.capture = true
@@ -31,7 +35,7 @@ pipeline {
              "target": "/"
            }, {
              "pattern": "${WORKSPACE}/*.txt",
-			 //jfrog repository.  we can create a new one too
+			 #jfrog repository.  we can create a new one too
 			"target": "example-repo-local" 
            }
          ]
